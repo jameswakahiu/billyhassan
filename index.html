@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Valuater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <img src="mercedes-logo.png" alt="Mercedes Logo">
+        <p>@Billy_Hassan</p>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Magical Valuater</h1>
+        <form id="valuationForm">
+            <div class="form-group">
+                <label for="unitValue">Unit Value:</label>
+                <input type="number" id="unitValue" name="unitValue" required>
+            </div>
+
+            <div class="form-group">
+                <label for="yearOfMake">Year of Make:</label>
+                <select id="yearOfMake" name="yearOfMake">
+                    <!-- Options will be populated dynamically using JavaScript -->
+                </select>
+            </div>
+
+            <button type="button" id="calculateButton">Calculate Value</button>
+        </form>
+
+        <div id="resultBox" class="result-box">
+            <h2>Valuation Results</h2>
+            <div id="marketValue" class="value">
+                <strong>Market Value:</strong> 
+                <!-- Display calculated market value here -->
+            </div>
+            <div id="forcedValue" class="value">
+                <strong>Forced Value:</strong> 
+                <!-- Display calculated forced value here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
